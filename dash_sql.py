@@ -32,6 +32,8 @@ for i in product_result:
     p_sales.append(int(i[1]))
     p_revenue.append(int(i[2]))
 
+# turns lists into dictionaries because px.bar() does not have any ability to
+# change variable names without a data parameter
 emp_data = dict(Employee=employees, Revenue=e_revenue, Sales=e_sales)
 pro_data = dict(Product=products, Revenue=p_revenue, Sales=p_sales)
 
