@@ -6,7 +6,10 @@ import dash_html_components as html
 import pymysql
 
 # Connect to database
-conn = pymysql.connect(host='localhost', user='root', password='root', database='dash')
+conn = pymysql.connect(host='itserver001.mysql.database.azure.com',
+                       user='Ivtr@itserver001',
+                       password='rootroot123!',
+                       database='dash')
 cursor = conn.cursor()
 
 # Select from the views
